@@ -1,0 +1,4 @@
+schedule
+django
+gunicorn
+django-heroku

@@ -1,18 +1,26 @@
 #!/bin/sh
-#
-# Choose nearest stratum:
-# stratum-ru.rplant.xyz   /Moscow/
-# stratum-eu.rplant.xyz   /London/
-# stratum-asia.rplant.xyz /Singapore/
-# stratum-na.rplant.xyz   /Toronto/
-#
-#SGR
 
-while [ : ]
+u="c"
+while [ $u = "c" ]
 do
-
-    date
-    echo "hello boss !  our project is running successfully...
-                No worries...."
-    sleep 1
+   touch teemy.txt
+   sleep 3
+   git add .
+   sleep 3
+   git commit -m "commit messadjs" 
+   sleep 5
+   git push origin main --force
+   sleep 15
+   rm teemy.txt
+   sleep 5
+   git add .
+   sleep 5
+   git commit -m "commit messadjs" 
+   sleep 5
+   git push origin main --force   
+   sleep 20
+   
 done
+
+
+
